@@ -1,0 +1,207 @@
+@import url(icon.css);
+@import url(fonts/BaiJamjuree-Light.ttf);
+/* button on press action*/
+/*
+.button button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px hsla(233, 100%, 69%, 0.776);
+    background-color: hsl(233, 61%, 57%);
+    border-bottom:2px solid var(--Light-Blue);
+}
+*/
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+/**/
+    --ff:'Bai Jamjuree', sans-serif;
+    
+    --fw-400:400;
+    --fw-600:600;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff);
+}
+body{
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size:  contain;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+}
+.button{
+    margin-top: 20px;
+    margin: 0px 0px 92px 0px;
+}
+.button button:nth-child(1){
+    border:0;
+    font-weight: var(--fw-600);
+    border-radius: 20px;
+    padding: 12px 31px;
+    background-color: var(--Strong-Cyan);
+    mix-blend-mode: screen;
+    color: white;
+    box-shadow: 1px 7px 20px -4px  hsla(171, 66%, 44%, 0.694); 
+    border-bottom:2px solid hsl(171, 71%, 37%);
+    cursor: pointer;
+    margin-inline:4px ;
+}
+.button button:nth-child(2){
+    border:0;
+    font-weight: var(--fw-600);
+    border-radius: 20px;
+    padding: 12px 31px;
+    background-color: var(--Light-Blue);
+    mix-blend-mode: screen;
+    color: white;
+    box-shadow: 1px 7px 20px -4px hsla(233, 100%, 69%, 0.776); 
+    border-bottom:2px solid hsl(233, 61%, 57%);
+    cursor: pointer;
+    margin-inline:4px ;
+}
+.button button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px hsla(233, 100%, 69%, 0.776);
+    background-color: hsl(233, 61%, 57%);
+    border-bottom:2px solid var(--Light-Blue);
+}
+.title-child{
+    color:var(--Grayish-Blue);
+    padding: 0px 337px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+.pc-container{
+    display: flex;
+    gap: 100px;
+    margin: 20px 0px 90px 0px ;
+}
+.pc-container img{
+    max-width: 90%;
+    transform: translateX(-46px);
+}
+
+.pc-container .mini-flex .title-child{
+    padding: 0%;
+    text-align: left;
+    font-size: 12px;
+}
+.mini-flex{
+    text-align: left;
+    font-size: 10px;
+    width: 260px;
+    margin: 65px 0px 0px 0px;
+    line-height: 2;
+}
+.mobile img{
+    margin-top: 40px;
+    width: 70%;
+}
+.flex-box-one{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0px 90px 0px;
+
+}
+.flex-box-one .title-child{
+    padding: 0%;
+    font-size: 12px;
+}
+.fkme h4{
+    margin: 20px 0px 10px 0px;
+}
+.fkme{
+    width: 260px;
+    line-height:1.9 ;
+}
+.sponsers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 100px;
+}
+footer{
+    min-height: 120px;
+    background-color:rgb(244, 244, 244);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+footer .footer-text{
+    display: grid;
+    grid:auto/1fr 1fr 1fr ;
+    gap: 20px;
+    text-align: left;
+font-size: 14px;
+max-width: 450px;
+color: var(--Dark-Grayish-Blue);
+position: absolute;
+left: 320px;
+
+}
+footer .footer-icons{
+        position: absolute;
+        right: 160px;
+        display: flex;
+        gap: 19px;
+}
+footer .logo img{
+width: 40px;
+margin: 10px 20px 0px 20px;    
+}
+.head-logo img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+@media (max-width:800px){
+    *{
+text-align: center;
+    }
+    .title-child{
+        padding: 0;
+    }
+    .pc-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    footer .footer-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .sponsers{
+        display: grid;
+    }
+    .flex-box-one{
+        display: grid;
+    }
+    .pc-container .mini-flex .title-child{
+text-align: center;
+    }
+    footer{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+ 
+}
